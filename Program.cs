@@ -13,9 +13,9 @@ Console.WriteLine("Hello, World!");
 
 
 
- IEnumerable<string> FindFiles (string FolderName) {
+ IEnumerable<string> FindFiles (string folderName) {
 
-    var foundFiles= System.IO.Directory.GetDirectories(FolderName);
+    var foundFiles = System.IO.Directory.EnumerateDirectories(folderName);
     return foundFiles;
  
 }
